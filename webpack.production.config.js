@@ -46,6 +46,8 @@ module.exports = {
         alias: {
             'react': path.resolve(__dirname, 'node_modules', 'react'),
             'react-dom': path.resolve(__dirname, 'node_modules', 'react-dom'),
+            'carbon-components': path.resolve(__dirname, 'node_modules', 'carbon-components'),
+            'carbon-components-react': path.resolve(__dirname, 'node_modules', 'carbon-components-react'),
         },
         extensions: ['.js', '.jsx']
     },
@@ -61,6 +63,18 @@ module.exports = {
             commonjs2: "react-dom",
             amd: "ReactDOM",
             root: "ReactDOM"
+        },
+        'carbon-components': {
+            commonjs: "carbon-components",
+            commonjs2: "carbon-components",
+            amd: "carbon-components",
+            root: "carbon-components"
+        },
+        'carbon-components-react': {
+            commonjs: "carbon-components-react",
+            commonjs2: "carbon-components-react",
+            amd: "carbon-components-react",
+            root: "carbon-components-react"
         }
     }
 }

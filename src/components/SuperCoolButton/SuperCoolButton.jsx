@@ -1,11 +1,13 @@
 import React from 'react';
-import styles from "./super-cool-button.module.scss";
+import 'carbon-components/css/carbon-components.min.css';
+import { Button } from 'carbon-components-react';
+
 
 const SuperCoolButton = ({title}) => {
   return (
-    <button className={styles['super-cool-button']} role={"button"}>
-      {title}
-    </button>
+      <Button kind={'primary'}>
+        {title}
+      </Button>
   );
 };
 
